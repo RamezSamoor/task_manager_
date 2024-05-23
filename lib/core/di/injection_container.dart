@@ -1,0 +1,8 @@
+import 'package:get_it/get_it.dart';
+import 'package:injectable/injectable.dart';
+import 'package:task_manager_app/core/di/injection_container.config.dart';
+
+
+GetIt getIt = GetIt.instance;
+@injectableInit
+Future<GetIt> configure() async => getIt.init();
